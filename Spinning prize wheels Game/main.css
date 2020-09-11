@@ -1,0 +1,188 @@
+/*
+Description:
+    Contains all the styles for the winning wheel page.
+    
+Verison History:
+    2012-01-28, Douglas McKechie
+    - Created based off earlier version.
+    
+    2015-09-26, Douglas McKechie
+    - Minor updates for the 2.0 winwheel example.
+*/
+
+body
+{
+    font-family: arial; background:url("wood.png")
+}
+.boxbottom {     display: block;
+    bottom: 0px;
+    background: cyan;
+    color: black;
+    padding: 14px;
+    margin-top: 57px; }
+#canvas { margin-top: -58px; }
+/* Sets the background image for the wheel */
+td.the_wheel
+{
+    background-image: url(./wheel_back.png);
+    background-position: 0px 0px;
+    background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    
+    cursor: pointer; width: 100%; border-radius: 6px; 
+    margin-bottom: 10px;
+    display: table;
+    
+}
+
+table.power th
+{
+    background-color: palevioletred;
+    cursor: default; color: white;
+	border-radius: 6px; margin-bottom: 10px;
+    display: inline-block;
+    width: 100%; 
+}
+
+
+/*#pw1 { background: rgba(241,231,103,1);
+background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(254,182,69,1)));
+background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -o-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: -ms-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645', GradientType=1 ); 
+	color: white;
+	border-radius: 6px; margin-bottom: 10px;
+    display: inline-block;
+    width: 100%; }*/
+td.pw1
+{
+    background: rgba(255,93,177,1);
+background: -moz-linear-gradient(left, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,93,177,1)), color-stop(100%, rgba(239,1,124,1)));
+background: -webkit-linear-gradient(left, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: -o-linear-gradient(left, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+background: linear-gradient(to right, rgba(255,93,177,1) 0%, rgba(239,1,124,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#ef017c', GradientType=1 );
+	color: white;
+	border-radius: 6px; margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+/*#pw2 { background: rgba(203,96,179,1);
+background: -moz-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(219,54,164,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(203,96,179,1)), color-stop(100%, rgba(219,54,164,1)));
+background: -webkit-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(219,54,164,1) 100%);
+background: -o-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(219,54,164,1) 100%);
+background: -ms-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(219,54,164,1) 100%);
+background: linear-gradient(to right, rgba(203,96,179,1) 0%, rgba(219,54,164,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1 ); color: white;
+	border-radius: 6px; 
+	margin-bottom: 10px;
+    display: inline-block;
+    width: 100%; }*/
+td.pw2
+{
+    background: rgba(252,236,252,1);
+background: -moz-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(255,124,216,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,236,252,1)), color-stop(100%, rgba(255,124,216,1)));
+background: -webkit-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(255,124,216,1) 100%);
+background: -o-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(255,124,216,1) 100%);
+background: -ms-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(255,124,216,1) 100%);
+background: linear-gradient(to right, rgba(252,236,252,1) 0%, rgba(255,124,216,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8', GradientType=1 );
+	color: white;
+	border-radius: 6px; 
+	margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+/*#pw3 { background: rgba(240,12,134,1);
+background: -moz-linear-gradient(left, rgba(240,12,134,1) 0%, rgba(239,1,124,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(240,12,134,1)), color-stop(100%, rgba(239,1,124,1)));
+background: -webkit-linear-gradient(left, rgba(240,12,134,1) 0%, rgba(239,1,124,1) 100%);
+background: -o-linear-gradient(left, rgba(240,12,134,1) 0%, rgba(239,1,124,1) 100%);
+background: -ms-linear-gradient(left, rgba(240,12,134,1) 0%, rgba(239,1,124,1) 100%);
+background: linear-gradient(to right, rgba(240,12,134,1) 0%, rgba(239,1,124,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f00c86', endColorstr='#ef017c', GradientType=1 );color: white;
+	border-radius: 6px; 
+	margin-bottom: 10px;
+    display: inline-block;
+    width: 100%; }*/
+td.pw3
+{
+   background: rgba(151,199,8,1);
+background: -moz-linear-gradient(left, rgba(151,199,8,1) 0%, rgba(145,232,66,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(151,199,8,1)), color-stop(100%, rgba(145,232,66,1)));
+background: -webkit-linear-gradient(left, rgba(151,199,8,1) 0%, rgba(145,232,66,1) 100%);
+background: -o-linear-gradient(left, rgba(151,199,8,1) 0%, rgba(145,232,66,1) 100%);
+background: -ms-linear-gradient(left, rgba(151,199,8,1) 0%, rgba(145,232,66,1) 100%);
+background: linear-gradient(to right, rgba(151,199,8,1) 0%, rgba(145,232,66,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97c708', endColorstr='#91e842', GradientType=1 );
+	color: white;
+	border-radius: 6px; 
+	margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+
+.myButton {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 34px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
